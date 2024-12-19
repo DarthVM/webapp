@@ -1,0 +1,10 @@
+.form-row {
+	border:  1px solid #e2e2e2;
+	margin:  10px;
+	padding: 20px;
+	background: #f2f2f2;
+}
+.subrow {
+	margin: 5px;
+	padding:  5px;
+}

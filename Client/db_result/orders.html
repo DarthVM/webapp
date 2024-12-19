@@ -1,0 +1,21 @@
+﻿<h5>Заказы</h5>
+  <div class="table-responsive small">
+    <table class="table table-striped table-bordered border-primary table-responsive-lg table-hover">
+      <thead>
+      <tr>
+        <% schema.forEach(function(key) { %> <!-- EJS подставит сюда функцию -->
+        <th scope="col"><%= key %></th>
+        <% }) %>
+      </tr>
+      </thead>
+      <tbody class="table-group-divider">
+      <% result.forEach(function(value) { %>
+      <tr>
+        <% schema.forEach(function(key) { %>
+        <td><%= value[key] %></td>
+        <% }) %>
+      </tr>
+      <% }) %>
+      </tbody>
+    </table>
+  </div>
